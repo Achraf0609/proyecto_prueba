@@ -177,11 +177,7 @@ function App() {
             </div>
 
             {error ? <p className="helper-message error-message">{error}</p> : null}
-            {!error ? (
-              <p className="helper-message">
-                Tip: add your own Mystery Dungeon style art in `public/pokemon/`.
-              </p>
-            ) : null}
+
           </div>
 
           <div className="panel result-panel">

@@ -5,6 +5,41 @@
   padding: 48px 0 72px;
 }
 
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: min(1180px, calc(100% - 32px));
+  margin: 20px auto 0;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  background: rgba(255, 251, 248, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(177, 120, 126, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.nav-link {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font: inherit;
+  font-weight: 700;
+  color: #5b4f65;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, #ff8fab, #ffb86c);
+  color: #fffefb;
+  box-shadow: 0 10px 20px rgba(220, 126, 124, 0.2);
+}
+
 .app-shell::before,
 .app-shell::after {
   content: '';
@@ -411,6 +446,97 @@
   justify-self: start;
 }
 
+.credits-shell {
+  padding-top: 24px;
+}
+
+.credits-hero .hero-copy h1 {
+  max-width: 12ch;
+}
+
+.credits-orb {
+  min-height: 100%;
+  place-items: center;
+  text-align: center;
+}
+
+.credits-links {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.credits-links a,
+.panel-copy a,
+.credit-meta a {
+  color: #a94f62;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.credits-panel {
+  display: grid;
+  gap: 20px;
+}
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.credit-card {
+  border-radius: 26px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(235, 217, 224, 0.95);
+  box-shadow: 0 12px 24px rgba(204, 170, 177, 0.12);
+}
+
+.credit-head h3 {
+  margin: 0 0 8px;
+  color: #2e213d;
+}
+
+.credit-meta {
+  margin: 0 0 6px;
+  color: #6b6077;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.credit-sections {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.credit-section {
+  padding-top: 14px;
+  border-top: 1px solid rgba(235, 217, 224, 0.95);
+}
+
+.credit-section-title {
+  margin: 0 0 8px;
+  font-weight: 800;
+  color: #915265;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.credit-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #594f66;
+  display: grid;
+  gap: 8px;
+  line-height: 1.6;
+}
+
 @keyframes revealPop {
   0% {
     transform: scale(0.98);
@@ -443,6 +569,16 @@
 }
 
 @media (max-width: 720px) {
+  .top-nav {
+    width: min(100% - 18px, 1180px);
+    margin-top: 12px;
+    justify-content: stretch;
+  }
+
+  .nav-link {
+    flex: 1 1 0;
+  }
+
   .app-shell {
     width: min(100% - 18px, 1180px);
     padding: 20px 0 36px;
@@ -478,6 +614,10 @@
 
   .result-art-wrap {
     min-height: 220px;
+  }
+
+  .credits-grid {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -366,6 +366,7 @@
 .result-panel {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .result-card {
@@ -379,7 +380,9 @@
   padding: 20px;
   display: grid;
   gap: 18px;
-  min-height: 100%;
+  min-height: 0;
+  height: auto;
+  align-self: stretch;
 }
 
 .result-card.revealing {

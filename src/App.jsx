@@ -126,6 +126,9 @@ function App() {
           Credits
         </button>
       </header>
+      <div className="creator-banner">
+        Created by Achraf - <a href="https://x.com/Achraf0609" target="_blank" rel="noreferrer">@Achraf0609</a>
+      </div>
 
       <main className="app-shell">
         <section className="hero-panel">

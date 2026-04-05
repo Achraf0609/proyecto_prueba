@@ -40,6 +40,21 @@
   box-shadow: 0 10px 20px rgba(220, 126, 124, 0.2);
 }
 
+.creator-banner {
+  width: min(1180px, calc(100% - 32px));
+  margin: 12px auto 0;
+  padding: 0 8px;
+  color: #7a6672;
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.creator-banner a {
+  color: #a94f62;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .app-shell::before,
 .app-shell::after {
   content: '';
@@ -585,6 +600,12 @@
   .app-shell {
     width: min(100% - 18px, 1180px);
     padding: 20px 0 36px;
+  }
+
+  .creator-banner {
+    width: min(100% - 18px, 1180px);
+    text-align: center;
+    margin-top: 10px;
   }
 
   .hero-copy,

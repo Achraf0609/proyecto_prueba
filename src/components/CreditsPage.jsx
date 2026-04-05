@@ -8,8 +8,7 @@ function CreditsPage() {
           <p className="eyebrow">Sprite and portrait credits</p>
           <h1>Credits for the Pokemon art used in this app</h1>
           <p className="hero-description">
-            This page documents the PMD sprite and portrait attributions you provided, with
-            the original license note and source repository.
+            Credits for the PMD-style sprites and portraits used in this app.
           </p>
         </div>
 
